@@ -1,0 +1,8 @@
+numpy>=1.24.0
+scipy>=1.10.0
+tellurium>=2.2.10
+SALib>=1.4.7
+bokeh>=3.1.0
+jupyter>=1.0.0
+notebook>=6.5.0
+matplotlib>=3.7.0
