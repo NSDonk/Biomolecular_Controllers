@@ -1,8 +1,10 @@
 # Python
 __pycache__/
-*.py[cod]
+*.py[codz]
 *$py.class
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -16,6 +18,7 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -25,10 +28,11 @@ venv/
 env/
 ENV/
 .venv
+env.bak/
+venv.bak/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints
 
 # IDEs
 .vscode/
@@ -36,31 +40,27 @@ ENV/
 *.swp
 *.swo
 *~
-.DS_Store
 
 # Testing
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 .tox/
-
-# Data files (uncomment if you want to track data)
-# *.csv
-# *.h5
-# *.hdf5
+.nox/
+coverage.xml
+*.cover
 
 # Output files
 *.html
 *.svg
 *.png
-results/
-figures/
-output/
-
-# Binary docs and outputs
 *.pdf
 *.gif
+results/
+figures/
 figures*/
+output/
 outputs/
 checkpoints/
 logs/
@@ -69,10 +69,17 @@ tmp/
 # Bokeh
 .bokeh/
 
-# Tellurium cache
+# Tellurium
 .tellurium/
 
 # OS
-Thumbs.db
 .DS_Store
+Thumbs.db
 desktop.ini
+
+# Type checkers / linters
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+cython_debug/
